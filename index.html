@@ -580,7 +580,7 @@
   <div class="container" id="header" style="text-align: center; margin: auto;">
     <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
       <h2 class="col-md-12 text-center" id="title">
-       Backdoor Attacks Against VLM-based Robotic Manipulation in the Physical World
+       TrojanRobot: Physical-world Backdoor Attacks Against VLM-based Robotic Manipulation
       </h2>
         <h3 class="col-md-12 text-center" id="title" style="color: rgb(140, 21, 21); white-space: nowrap; overflow: visible;">
             Warning: This paper contains potentially harmful AI-generated language and aggressive actions!
@@ -590,21 +590,21 @@
   </div>
   <script>
   </script>
-  <div class="container" id="main">
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-1 text-center">
-        <ul class="list-inline">
-          <li>Anonymous authors</li>
-        </ul>
-<!--        <ul class="list-inline">-->
-<!--          <li> <sup>1</sup>xxxx</li>-->
-<!--            <li> <sup>2</sup>xxxx</li>-->
-<!--          <br />-->
-<!--&lt;!&ndash;          <li> <sup>*</sup> Lead Authors</li>&ndash;&gt;-->
-<!--&lt;!&ndash;          <li> <sup>†</sup> Equal Advising</li>&ndash;&gt;-->
-<!--        </ul>-->
-      </div>
-    </div>
+<!--  <div class="container" id="main">-->
+<!--    <div class="row">-->
+<!--      <div class="col-sm-10 col-sm-offset-1 text-center">-->
+<!--&lt;!&ndash;        <ul class="list-inline">&ndash;&gt;-->
+<!--&lt;!&ndash;          <li>Anonymous authors</li>&ndash;&gt;-->
+<!--&lt;!&ndash;        </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;        <ul class="list-inline">&ndash;&gt;-->
+<!--&lt;!&ndash;          <li> <sup>1</sup>xxxx</li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li> <sup>2</sup>xxxx</li>&ndash;&gt;-->
+<!--&lt;!&ndash;          <br />&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;          <li> <sup>*</sup> Lead Authors</li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;          <li> <sup>†</sup> Equal Advising</li>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        </ul>&ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
 
 
    <div class="row">
@@ -843,12 +843,11 @@
           border-radius: 8px;
           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         ">
-            Robotic manipulation refers to the autonomous handling and interaction of robots with objects using advanced techniques in robotics and artificial intelligence.
-            The advent of powerful tools such as <i>large language models</i> (LLMs) and <i>large vision-language models</i> (LVLMs) has significantly enhanced the capabilities of these robots in environmental perception and decision-making.
-            However, the introduction of these intelligent agents has led to security threats such as jailbreak attacks and adversarial attacks.
-            In this research, we take a further step by proposing a backdoor attack specifically targeting robotic manipulation and, for the first time, implementing backdoor attack in the physical world.
-            By embedding a backdoor visual language model into the visual perception module within the robotic system, we successfully mislead the robotic arm's operation in the physical world, given the presence of common items as triggers.
-            Experimental evaluations in the physical world demonstrate the effectiveness of the proposed backdoor attack.
+            Robotic manipulation  policies  are increasingly empowered by large language models (LLMs) and vision-language models (VLMs), leveraging their understanding and perception capabilities.
+            Recently, the security of robotic manipulation tasks has been extensively studied, with backdoor attacks drawing considerable attention due to their stealth and potential harm. However, existing backdoor efforts are limited to simulators and struggle to poisoning third-party commercial VLM-based implementations in real-world robotic manipulation.
+To address this, we propose TrojanRobot, embedding a backdoor module into the modular robotic policy via backdoor relationships to manipulate the LLM-to-VLM pathway and compromise the system, with our vanilla design employing a backdoor-finetuned VLM to serve as the module.
+To enhance attack performance, we further propose a prime scheme by introducing the concept of LVLM-as-a-backdoor, which leverages in-context instruction learning (ICIL)
+ to control large vision-language model (LVLM) behavior via backdoor system prompts. Moreover, we develop three types of prime attacks—permutation, stagnation, and intentiona-—achieving flexible  backdoor attack effects. Extensive physical-world and simulator experiments on 18 real-world manipulation tasks and 4 VLMs verify the superiority of proposed TrojanRobot.
         </div>
         <center>
           <img src="./pipeline.png" class="img-responsive" alt="overview" width="100%"
